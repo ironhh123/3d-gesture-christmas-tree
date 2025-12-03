@@ -35,3 +35,6 @@
 ```bash
 # Python 3.x
 python -m http.server 8000
+## 自定义图片功能
+下载整个文件之后点击assets文件夹，将想要展示的图片导入其中，并按规律进行命名如：1.png/1.jpg 以此类推。
+找到index.html中的配置区 大概95行左右 找到const IMAGE_URLS ，将‘’中的图片名称进行更换再保存启动即可。
