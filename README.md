@@ -30,23 +30,12 @@
 1. 安装 VS Code 插件 **Live Server**。
 2. 右键点击 `index.html`，选择 **"Open with Live Server"**。
 
-### 方法 2: 使用 Python
-如果你安装了 Python，在项目根目录下运行终端命令：
-```bash
-# Python 3.x
-python -m http.server 8000
-## 自定义图片功能
-下载整个文件之后点击assets文件夹，将想要展示的图片导入其中，并按规律进行命名如：1.png/1.jpg 以此类推。
-找到index.html中的配置区 大概95行左右 找到const IMAGE_URLS ，将‘’中的图片名称进行更换再保存启动即可。
-# 🛠️ VS Code 安装与 Live Server 配置指南
-
+###  🛠️ VS Code 安装与 Live Server 配置指南
 本项目使用了现代 Web 技术（MediaPipe AI + WebGL），为了确保摄像头权限和图片资源能正常加载，**不能直接双击打开 html 文件**，必须在本地服务器环境下运行。
 
 本指南将教你如何使用 **Visual Studio Code (VS Code)** 和 **Live Server** 插件来零基础运行本项目。
 
 ---
-## 有人会问，直接下载项目文件 可不可以加载动画，回答是不行的：保证动画能够正常运行的最简单条件：
-安装vscode 以及 插件live server 且在有梯子的前提下运行即可， 以下为vscode 及插件的安装教程
 ## 第一步：下载并安装 VS Code
 
 Visual Studio Code 是目前世界上最流行的免费代码编辑器。
@@ -114,4 +103,15 @@ A: 请检查第三步是否安装成功，或者尝试重启一下 VS Code。此
 A: 
 1. 按 F12 打开控制台，看是否有红色报错。
 2. 确保你的图片放在了正确的 `assets` 文件夹内。
-3. 确保你没有直接双击 html 文件打开，而是通过 Live Server 打开的。
+3. 确保你没有直接双击 html 文件打开，而是通过 Live Server 打
+
+### 方法 2: 使用 Python
+如果你安装了 Python，在项目根目录下运行终端命令：
+```bash
+# Python 3.x
+python -m http.server 8000
+## 自定义图片功能
+下载整个文件之后点击assets文件夹，将想要展示的图片导入其中，并按规律进行命名如：1.png/1.jpg 以此类推。
+找到index.html中的配置区 大概95行左右 找到const IMAGE_URLS ，将‘’中的图片名称进行更换再保存启动即可。
+
+开的。
